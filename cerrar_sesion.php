@@ -11,9 +11,15 @@
 
     if(isset($ultimaaaaa)){ 
 
+        unset($_SESSION['usuario_id']); 
+        unset($_SESSION['nombre']);
+
+
+
         session_destroy(); 
 
-        header("Location: formulario_login.php?archer=true");
+        header("Location: formulario_login.php?archer=true"); 
+        exit;
 
     }
 

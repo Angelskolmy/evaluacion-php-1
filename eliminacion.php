@@ -9,7 +9,7 @@
     session_start();
     function eliminar(){ 
 
-        $dato_busq_delete=$_REQUEST['aaaaa']; 
+        $dato_busq_delete=$_GET['id']; 
 
         $interlase=mysqli_connect("localhost","root","","evaluacion")or die("falla de conexion"); 
 
@@ -28,7 +28,7 @@
 
         }
     }
-    if(isset($_REQUEST['ultimobt'])){ 
+    if(isset($_REQUEST['id'])){ 
 
         eliminar();
     }

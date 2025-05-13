@@ -27,6 +27,11 @@
     if(isset($_GET['archer']) && $_GET['archer']==true){ 
 
         echo"cerro sesion";}
+?>  
+<?php 
+    if(isset($_GET['archer']) && $_GET['archer']==true){ 
+
+        echo"cerro sesion";}
 ?> 
 
 <body>

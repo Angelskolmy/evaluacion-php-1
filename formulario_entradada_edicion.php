@@ -9,7 +9,7 @@
 session_start();
 function validar_sql (){ 
 
-    $dato_busqueda=$_REQUEST['id_old_tarea']; 
+    $dato_busqueda=$_REQUEST['id_upt']; 
 
     $enlace_1=mysqli_connect("localhost","root","","evaluacion") or die("error en la conexion"); 
 
@@ -43,11 +43,11 @@ function validar_sql (){
 <?php 
     } 
     else{ 
-        header("Location: formulario_edicion_validacion.php?mensaje_update=true");
+        header("Location: listar_paneltareas.php?mensaje_update=true");
     } 
     mysqli_close($enlace_1);
     } 
-    if(isset($_REQUEST['invoque_update1'])){ 
+    if(isset($_REQUEST['id_upt'])){ 
 
         validar_sql ();
 
